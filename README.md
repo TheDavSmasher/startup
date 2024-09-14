@@ -4,22 +4,23 @@ I am going to make a Pixel art/sprite animation application where anyone can ent
 
 ## Technology Representation
 
-**HTML:** Three pages with HTML, one for Login, one for canvas, another for file storage viewing. Each one with links to each other.
+- **HTML:** Three pages with HTML, one for Login, one for canvas, another for file storage viewing. Each one with links to each other.
 
-**CSS:** Resizing canvas and tools to fit many screen sizes, with color picking background.
+- **CSS:** Resizing canvas and tools to fit many screen sizes, with color picking background.
 
-**JavaScript:** Login functionality, as well as updating each pixel's 4 values, and making backend calls.
+- **JavaScript:** Login functionality, as well as updating each pixel's 4 values, and making backend calls.
 
-**React:** Two-page application with canvas componetized and reactive to user's input.
+- **React:** Two-page application with canvas componetized and reactive to user's input.
 
-**Web Service:** Endpoints for:
- - Retrieving Library
- - Submitting new images
- - Generating Color Schemes using the http://colormind.io/api-access/ service.
+- **Web Service:** Endpoints for:
 
-**DB/Login:** Store users, and each image or animation created. Allows sign in and log in. Passwords encrypted. Can view files but can only store if authenticated.
+  - Retrieving Library
+  - Submitting new images
+  - Generating Color Schemes using the <http://colormind.io/api-access/> service.
 
-**WebSocket:** As a new image or animation is posted by someone, it is broadcasted to the others. If an animation is colaborative, each update from each member is sent to the other members. Simple chatbox for collaborative canvases.
+- **DB/Login:** Store users, and each image or animation created. Allows sign in and log in. Passwords encrypted. Can view files but can only store if authenticated.
+
+- **WebSocket:** As a new image or animation is posted by someone, it is broadcasted to the others. If an animation is colaborative, each update from each member is sent to the other members. Simple chatbox for collaborative canvases.
 
 ## Visual Sketch for Canvas
 
