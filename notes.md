@@ -12,3 +12,7 @@ Public Elastic IP Address: <http://98.82.51.70>
 Make sure to keep it running to avoid costs.
 
 SSHing into EC2 server instance: ssh -i ../production.pem ubuntu@98.82.51.70
+
+Can also be done from Home with: ssh -i '~/Documents/BYU/CS 260/production.pem' ubuntu@98.82.51.70
+
+I have rented the <http://pixelshare.click> domain, redirected to my elastic IP.
