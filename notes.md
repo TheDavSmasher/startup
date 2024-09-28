@@ -24,3 +24,7 @@ Input fields can have labels with label for="id" of the input field. Input field
 Color default values are assigned with "#rrggbb" hex code. Input fields can have placeholder text, default values, and a pattern (defined with regex).
 
 For selectors defaults, mark an option as selected. For checkbox, mark as checked.
+
+HTML is extremely barebones but will serve as the skeleton of the webpage once it's done.
+
+You can have a head with some metadata, and inside the body a header, main, and footer sections.
