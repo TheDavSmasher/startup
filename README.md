@@ -37,6 +37,6 @@ This deliverable uses basic HTML and minor CSS elements for the basic structure 
 - **Navigation** - Either Log in or Sign up buttons send to the canvas page. The Sharing page is accessible from navigation.
 - **Login** - The starting page will take information from new users as well as returning users.
 - **DB** - The sprites shown in the sharing page are stored in the database, as well as each user's login information.
+- **Service** - The Color Scheme Generator is represented in the Canvas page.
 - **WebSocket** - The Chatbox and the Canvas itself will show realtime messages and changes.
 
-In canvas.html, an image and button act as placeholder for the Color Scheme Generator 3rd party service.
