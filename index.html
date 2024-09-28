@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <!-- Tell browsers not to scale the viewport automatically -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>PixelShare</title>
     </head>
@@ -19,9 +18,25 @@
             <hr />
         </header>
 
-        <main></main>
-        
-        <footer>
+        <main>
+            <h2 style="margin-left: 10%;">Welcome to PixelShare!</h2>
+            <div>
+                <h3>Log in</h3>
+                <form action="canvas.html" method="get">
+                    <div style="margin-right: 20px; margin-bottom: 10px;">
+                        <span>Username: </span>
+                        <input type="text" name="" id="username" />
+                    </div>
+                    <div style="margin-right: 20px; margin-bottom: 10px;">
+                        <span>Password: </span>
+                        <input type="password" id="password" />
+                    </div>
+                    <button type="submit" style="margin-left: 20%;">Log in</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer" style="bottom: 0; margin-bottom: 20px;">
             <hr />
             <span class="text-reset">David Higueros</span>
             <br />

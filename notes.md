@@ -17,7 +17,7 @@ Can also be done from Home with: ssh -i '~/Documents/BYU/CS 260/production.pem' 
 
 I have rented the <http://pixelshare.click> domain, redirected to my elastic IP.
 
-In HTML, you can use \<div\> to separate diferent areas of a screen verically. \<a href=link\> will insert a hyperlink in the text provided after the identifier. Images are similar, except it's \<img src=location\>. Add style=width:#px; for specific size.
+In HTML, you can use \<div\> to separate diferent areas of a screen. \<a href=link\> will insert a hyperlink in the text provided after the identifier. Images are similar, except it's \<img src=location\>. Add style=width:#px; for specific size.
 
 Input fields can have labels with label for="id" of the input field. Input fields are typed, can have id, need a name and value.
 
