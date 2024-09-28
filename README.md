@@ -39,4 +39,3 @@ This deliverable uses basic HTML and minor CSS elements for the basic structure 
 - **DB** - The sprites shown in the sharing page are stored in the database, as well as each user's login information.
 - **Service** - The Color Scheme Generator is represented in the Canvas page.
 - **WebSocket** - The Chatbox and the Canvas itself will show realtime messages and changes.
-
