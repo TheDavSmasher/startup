@@ -28,3 +28,5 @@ I am going to make a Pixel art/sprite animation application where anyone can ent
 ## Visual Sketch for Canvas
 
 ![A small preview of the general outline of the pixel art canvas and the tools given to the user.](https://github.com/TheDavSmasher/startup/blob/main/CanvasRoughSketch.png)
+
+## HTML Deliverable
