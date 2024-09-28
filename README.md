@@ -30,3 +30,13 @@ I am going to make a Pixel art/sprite animation application where anyone can ent
 ![A small preview of the general outline of the pixel art canvas and the tools given to the user.](https://github.com/TheDavSmasher/startup/blob/main/CanvasRoughSketch.png)
 
 ## HTML Deliverable
+
+This deliverable uses basic HTML and minor CSS elements for the basic structure of the application.
+
+- **HTML Pages** - Three pages of the application: login/main (index), the main canvas page, and a page to show all other posted files.
+- **Navigation** - Either Log in or Sign up buttons send to the canvas page. The Sharing page is accessible from navigation.
+- **Login** - The starting page will take information from new users as well as returning users.
+- **DB** - The sprites shown in the sharing page are stored in the database, as well as each user's login information.
+- **WebSocket** - The Chatbox and the Canvas itself will show realtime messages and changes.
+
+In canvas.html, an image and button act as placeholder for the Color Scheme Generator 3rd party service.
