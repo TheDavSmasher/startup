@@ -28,3 +28,11 @@ For selectors defaults, mark an option as selected. For checkbox, mark as checke
 HTML is extremely barebones but will serve as the skeleton of the webpage once it's done.
 
 You can have a head with some metadata, and inside the body a header, main, and footer sections.
+
+CSS Flex:
+
+- flex: 0 height; will lock is width and not be a part of flex changes.
+- flex: n; will give the element the nth portion of the parent's flex display size.
+- display: flex; will allow you to edit the position and size of everything inside the element, relative to the parent. It does not propagate, and each element needs to mark this for its children to have flex within it.
+- align-items is vertical, justify-content is horizontal.
+- flex-direction: row/column; will determine which direction its children will align.
