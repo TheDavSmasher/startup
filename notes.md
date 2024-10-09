@@ -36,3 +36,15 @@ CSS Flex:
 - display: flex; will allow you to edit the position and size of everything inside the element, relative to the parent. It does not propagate, and each element needs to mark this for its children to have flex within it.
 - align-items is vertical, justify-content is horizontal.
 - flex-direction: row/column; will determine which direction its children will align.
+
+JavaScript:
+
+To add JavaScript to HTML, I need to add a \<script\> element, which can either be straight up functions or have the src attribute to the js file. Now certain attributes of elements can call these functions.
+
+Elements have an onclick attribute that can call one of these functions. Other events exist, and can be set by either `element.addEventListener(event, function (event))` or marking it directly on the HTML.
+
+All elements have a textContent, innerText, and innerHTML attributes. Directly modifying the innerHTML will completely rewrite the element.
+
+You can add elements by creating new nodes with `document.createElement(type)`. This child can have its attributes modified. To actually add it, you need a parent element to call `parent.appendChild(newChild)` so it becomes part of the HTML structure. `element.removeChild(oldChild)` can also be used to remove existing elements.
+
+Other useful element functions are `querySelectorAll(type)` to get all elements of a given type, `document.createTextNode(string)` which creates an element of only text, `element.setAttribute(attribute, value)` which can set any pre- or undefined attributes to the given value or function, and `document.styleSheet[i].insertRule(cssRuleString, index)` to also add CSS.
