@@ -17,6 +17,7 @@ nav {
     flex-direction: row;
     align-items: center;
     padding-top: 5px;
+    margin-left: 10px;
 }
 
 nav > h1 {
@@ -40,6 +41,38 @@ main {
     flex: 1 calc(100vh - 90px);
     justify-content: space-around;
     background-color: rgb(59, 69, 70);
+}
+
+.mainfront {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainfront h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.userfront {
+    display: flex;
+    flex-direction: row;
+}
+
+.userfront * {
+    margin: 5px 10px 0px 10px;
+    background-color: rgb(104, 104, 105);
+}
+
+.form-group {
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.btn {
+    justify-items: right;
+    margin-top: 20px;
+    margin-left: 80%;
+    margin-bottom: 10px;
 }
 
 footer {

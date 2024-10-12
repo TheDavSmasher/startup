@@ -30,43 +30,45 @@
             </nav>
         </header>
 
-        <main class="container-fluid">
-            <h2 style="margin-left: 10%;">Welcome to PixelShare!</h2>
-            <div style="width:50%; float: left; text-align: center;">
-                <h3>Log in</h3>
-                <form action="canvas.html" method="get">
-                    <div style="margin-right: 20px; margin-bottom: 10px;">
-                        <span>Username: </span>
-                        <input type="text" name="" id="username" />
-                    </div>
-                    <div style="margin-right: 20px; margin-bottom: 10px;">
-                        <span>Password: </span>
-                        <input type="password" id="password" />
-                    </div>
-                    <button type="submit" style="margin-left: 20%;">Log in</button>
-                </form>
-            </div>
-            <div style="width:50%; float: right; text-align: center;">
-                <h3>Sign up</h3>
-                <form action="canvas.html" method="get">
-                    <div style="margin-right: 20px; margin-bottom: 10px;">
-                        <span>Email: </span>
-                        <input type="email" placeholder="your@email.com" />
-                    </div>
-                    <div style="margin-right: 40px; margin-bottom: 10px;">
-                        <span>Username: </span>
-                        <input type="text" id="newUsername" />
-                    </div>
-                    <div style="margin-right: 40px; margin-bottom: 10px;">
-                        <span>Password: </span>
-                        <input type="password" id="newPassword" placeholder="Your Password" />
-                    </div>
-                    <div style="margin-right: 100px; margin-bottom: 10px;">
-                        <span>Confirm Password: </span>
-                        <input type="password" id="confirmPassword" placeholder="Confirm Password" />
-                    </div>
-                    <button type="submit" style="margin-left: 20%;">Sign up</button>
-                </form>
+        <main class="container-fluid mainfront text-center">
+            <h2>Welcome to PixelShare!</h2>
+            <div class="userfront">
+                <div class="login-cont" style="width:50%; float: left; text-align: center;">
+                    <h3>Log in</h3>
+                    <form action="canvas.html" method="get">
+                        <div class="form-group">
+                            <label for="username">Username: </label>
+                            <input class="form-control" type="text" name="" id="username" />
+                        </div>
+                        <div class="form-group">
+                            <label>Password: </label>
+                            <input class="form-control" type="password" id="password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                </div>
+                <div class="register-cont" style="width:50%; float: right; text-align: center;">
+                    <h3>Sign up</h3>
+                    <form action="canvas.html" method="get">
+                        <div class="form-group">
+                            <label>Email: </label>
+                            <input class="form-control" type="email" placeholder="your@email.com" />
+                        </div>
+                        <div class="form-group">
+                            <label>Username: </label>
+                            <input class="form-control" type="text" id="newUsername" />
+                        </div>
+                        <div class="form-group">
+                            <label>Password: </label>
+                            <input class="form-control" type="password" id="newPassword" placeholder="Your Password" />
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password: </label>
+                            <input class="form-control" type="password" id="confirmPassword" placeholder="Confirm Password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                    </form>
+                </div>
             </div>
         </main>
 
