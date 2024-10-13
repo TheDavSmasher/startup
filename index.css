@@ -1,0 +1,31 @@
+.mainfront {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainfront h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.userfront {
+    display: flex;
+    flex-direction: row;
+}
+
+.userfront * {
+    margin: 5px 10px 0px 10px;
+    background-color: rgb(104, 104, 105);
+}
+
+.form-group {
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.btn {
+    justify-items: right;
+    margin-top: 20px;
+    margin-left: 80%;
+    margin-bottom: 10px;
+}
