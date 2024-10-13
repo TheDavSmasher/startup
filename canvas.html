@@ -33,67 +33,70 @@
         </header>
 
         <main>
-            <div class="colorpick">
-                <span>Active Color</span>
-                <div class="color-picker">
-                    <div class="alpha-selection">
-                        <label for="red">A</label>
-                        <input type="range" name="alpha" id="alpha" min="0" max="255" step="1" />
-                    </div>
-                    <div class="color-selection">
-                        <div class="rgb-selection">
-                            <div class="rgb-value">
-                                <label for="red">R</label>
-                                <input type="range" name="red" id="red" min="0" max="255" step="1" class="form-range" />
-                            </div>
-                            <div class="rgb-value">
-                                <label for="green">G</label>
-                                <input type="range" name="green" id="green" min="0" max="255" step="1" class="form-range" />
-                            </div>
-                            <div class="rgb-value">
-                                <label for="blue">B</label>
-                                <input type="range" name="green" id="green" min="0" max="255" step="1" class="form-range" />
-                            </div> 
+            <div class="reference-area">
+                <div class="palette">
+                    <span>Color Palette</span>
+                    <br>
+                    <img src="pallete.png" />
+                    <br>
+                    <button>Generate</button>
+                </div>
+                <div class="chatbox">
+                    <span>Chat History:</span>
+                    <ul>
+                        <li class="message"><span class="user">Addie: </span> Looks great!</li>
+                        <li class="message"><span class="user">Sam: </span> I'll be working on frame 26.</li>
+                        <li class="message"><span class="user">You: </span> I'll be back</li>
+                        <li class="message"><span class="user">Addie: </span> see ya</li>
+                    </ul>
+                    <input type="text" id="newMessage" />
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+            <div class="main-canvas">
+                <div>
+                    <span>Canvas: 20x20px</span>
+                    <br>
+                    <img src="pixelCanvas.jpeg">
+                </div>
+                <br>
+                <div class="tools">
+                    <button>Previous Frame</button>
+                    <button>Undo</button>
+                    <button>Redo</button>
+                    <button>Save</button>
+                    <button>Next Frame</button>
+                </div>
+            </div>
+            <div class="color-area">
+                <div class="colorpick">
+                    <span>Active Color</span>
+                    <div class="color-picker">
+                        <div class="alpha-selection">
+                            <label for="red">A</label>
+                            <input type="range" name="alpha" id="alpha" min="0" max="255" step="1" />
                         </div>
-                        <div class="general-selection">
-                            <input type="color" name="selection" id="selection" class="form-control form-control-color" />
+                        <div class="color-selection">
+                            <div class="rgb-selection">
+                                <div class="rgb-value">
+                                    <label for="red">R</label>
+                                    <input type="range" name="red" id="red" min="0" max="255" step="1" class="form-range" />
+                                </div>
+                                <div class="rgb-value">
+                                    <label for="green">G</label>
+                                    <input type="range" name="green" id="green" min="0" max="255" step="1" class="form-range" />
+                                </div>
+                                <div class="rgb-value">
+                                    <label for="blue">B</label>
+                                    <input type="range" name="green" id="green" min="0" max="255" step="1" class="form-range" />
+                                </div> 
+                            </div>
+                            <div class="general-selection">
+                                <input type="color" name="selection" id="selection" class="form-control form-control-color" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <div class="palette">
-                <span>Color Palette</span>
-                <br>
-                <img src="pallete.png" />
-                <br>
-                <button>Generate</button>
-            </div>
-            <br>
-            <div>
-                <span>Canvas: 20x20px</span>
-                <br>
-                <img src="pixelCanvas.jpeg">
-            </div>
-            <br>
-            <div class="tools">
-                <button>Previous Frame</button>
-                <button>Undo</button>
-                <button>Redo</button>
-                <button>Save</button>
-                <button>Next Frame</button>
-            </div>
-            <br>
-            <div class="chatbox">
-                <span>Chat History:</span>
-                <ul>
-                    <li class="message"><span class="user">Addie: </span> Looks great!</li>
-                    <li class="message"><span class="user">Sam: </span> I'll be working on frame 26.</li>
-                    <li class="message"><span class="user">You: </span> I'll be back</li>
-                    <li class="message"><span class="user">Addie: </span> see ya</li>
-                </ul>
-                <input type="text" id="newMessage" />
-                <button type="submit">Send</button>
             </div>
         </main>
         
