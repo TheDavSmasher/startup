@@ -3,6 +3,13 @@ main {
     flex-direction: row;
 }
 
+.palette {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 43, 43);
+    padding: 10px;
+}
+
 .colorpick {
     display: flex;
     flex-direction: column;
