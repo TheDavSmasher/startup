@@ -34,22 +34,32 @@
 
         <main>
             <div class="colorpick">
-                <span>Active Color: </span>
-                <br>
-                <label for="red">R</label>
-                <input type="range" name="red" id="red" min="0" max="255" step="1" />
-                <br>
-                <label for="green">G</label>
-                <input type="range" name="green" id="green" min="0" max="255" step="1" />
-                <br>
-                <label for="blue">B</label>
-                <input type="range" name="green" id="green" min="0" max="255" step="1" />
-                <br>
-                <label for="selection">Selection</label>
-                <input type="color" name="selection" id="selection" />
-                <br>
-                <label for="red">Alpha</label>
-                <input type="range" name="alpha" id="alpha" min="0" max="255" step="1" />
+                <span>Active Color</span>
+                <div class="color-picker">
+                    <div class="alpha-selection">
+                        <label for="red">A</label>
+                        <input type="range" name="alpha" id="alpha" min="0" max="255" step="1" />
+                    </div>
+                    <div class="color-selection">
+                        <div class="rgb-selection">
+                            <div class="rgb-value">
+                                <label for="red">R</label>
+                                <input type="range" name="red" id="red" min="0" max="255" step="1" class="form-range" />
+                            </div>
+                            <div class="rgb-value">
+                                <label for="green">G</label>
+                                <input type="range" name="green" id="green" min="0" max="255" step="1" class="form-range" />
+                            </div>
+                            <div class="rgb-value">
+                                <label for="blue">B</label>
+                                <input type="range" name="green" id="green" min="0" max="255" step="1" class="form-range" />
+                            </div> 
+                        </div>
+                        <div class="general-selection">
+                            <input type="color" name="selection" id="selection" class="form-control form-control-color" />
+                        </div>
+                    </div>
+                </div>
             </div>
             <br>
             <div class="palette">
