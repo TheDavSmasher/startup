@@ -43,6 +43,22 @@ main {
     border-radius: 0;
 }
 
+.main-canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tools button {
+    margin: 0 5px 0 5px;
+}
+
 .colorpick {
     display: flex;
     flex-direction: column;
