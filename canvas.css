@@ -3,11 +3,44 @@ main {
     flex-direction: row;
 }
 
+.reference-area {
+    display: flex;
+    flex-direction: column;
+}
+
 .palette {
     display: flex;
     flex-direction: column;
     background-color: rgb(43, 43, 43);
     padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.empty {
+    flex: 1;
+}
+
+.chatbox {
+    margin: 5px;
+    margin-bottom: 0;
+    background-color: aliceblue;
+    border-radius: 5px 5px 0 0;
+}
+
+.chat-title {
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(197, 226, 233);
+    border-radius: 5px;
+}
+
+.send-message-box {
+    border-radius: 0 !important;
+}
+
+.send-message-form button {
+    border-radius: 0;
 }
 
 .colorpick {
@@ -64,9 +97,4 @@ main {
 
 .general-selection {
     margin: 10px;
-}
-
-.palette {
-    border-radius: 5px;
-
 }

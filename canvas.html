@@ -39,16 +39,23 @@
                     <img src="pallete.png" />
                     <button class="btn btn-secondary">Generate</button>
                 </div>
+                <div class="empty"></div>
                 <div class="chatbox">
-                    <span>Chat History:</span>
+                    <div class="chat-title">
+                        <span>Chat History</span>
+                    </div>
                     <ul>
                         <li class="message"><span class="user">Addie: </span> Looks great!</li>
                         <li class="message"><span class="user">Sam: </span> I'll be working on frame 26.</li>
                         <li class="message"><span class="user">You: </span> I'll be back</li>
                         <li class="message"><span class="user">Addie: </span> see ya</li>
                     </ul>
-                    <input type="text" id="newMessage" />
-                    <button type="submit">Send</button>
+                    <div class="input-group send-message-form">
+                        <input type="text" id="newMessage" class="form-control send-message-box"/>
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-success">Send</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="main-canvas">
