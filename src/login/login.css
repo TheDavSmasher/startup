@@ -23,7 +23,7 @@
     padding-right: 10px;
 }
 
-.btn {
+.userfront .btn {
     justify-items: right;
     margin-top: 20px;
     margin-left: 80%;
@@ -40,4 +40,8 @@
     width:50%;
     float: right;
     text-align: center;
+}
+
+.optionsButtons .btn {
+    margin: 20px;
 }

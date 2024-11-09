@@ -14,47 +14,49 @@ export function App() {
 
     return (
         <BrowserRouter>
-            <header className="container-fluid">
-                <nav className="navbar">
-                    <NavLink className="nav-link" to=""><h2>PixelShare&trade;</h2></NavLink>
-                    <menu className="navbar-nav">
-                        <li className="nav-item">
-                            <NavLink className="nav-link active" to="">Login</NavLink>
-                        </li>
-                        {authState === AuthState.Authenticated && (
+            <div className="body">
+                <header className="container-fluid">
+                    <nav className="navbar">
+                        <NavLink className="nav-link" to=""><h2>PixelShare&trade;</h2></NavLink>
+                        <menu className="navbar-nav">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="canvas">Start Creating</NavLink>
+                                <NavLink className="nav-link active" to="">Login</NavLink>
                             </li>
-                        )}
-                        {authState === AuthState.Authenticated && (
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to="share">Community Posts</NavLink>
-                            </li>
-                        )}
-                    </menu>
-                </nav>
-            </header>
+                            {authState === AuthState.Authenticated && (
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="canvas">Start Creating</NavLink>
+                                </li>
+                            )}
+                            {authState === AuthState.Authenticated && (
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="share">Community Posts</NavLink>
+                                </li>
+                            )}
+                        </menu>
+                    </nav>
+                </header>
 
-            <Routes>
-                <Route path="/" element={<Login 
-                    userName={userName}
-                    authState={authState}
-                    onAuthChange={(userName, authState) => {
-                        setAuthState(authState);
-                        setUserName(userName);
-                    }}
-                />} exact />
-                <Route path="/share" element={<Share />} />
-                <Route path="/canvas" element={<Canvas />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
+                <Routes>
+                    <Route path="/" element={<Login 
+                        userName={userName}
+                        authState={authState}
+                        onAuthChange={(userName, authState) => {
+                            setAuthState(authState);
+                            setUserName(userName);
+                        }}
+                    />} exact />
+                    <Route path="/share" element={<Share />} />
+                    <Route path="/canvas" element={<Canvas />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
 
-            <footer className="footer text-white-50">
-                <div className="footer-cont">
-                    <span className="text-reset">David Higueros</span>
-                    <NavLink className="text-reset" href="https://github.com/TheDavSmasher/startup">GitHub</NavLink>
-                </div>
-            </footer>
+                <footer className="footer text-white-50">
+                    <div className="footer-cont">
+                        <span className="text-reset">David Higueros</span>
+                        <NavLink className="text-reset" href="https://github.com/TheDavSmasher/startup">GitHub</NavLink>
+                    </div>
+                </footer>
+            </div>
         </BrowserRouter>
     );
 }
