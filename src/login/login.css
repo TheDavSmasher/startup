@@ -29,3 +29,15 @@
     margin-left: 80%;
     margin-bottom: 10px;
 }
+
+.login-cont {
+    width:50%;
+    float: left;
+    text-align: center;
+}
+
+.register-cont {
+    width:50%;
+    float: right;
+    text-align: center;
+}
