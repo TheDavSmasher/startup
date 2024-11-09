@@ -1,0 +1,24 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "I am going to make a Pixel art/sprite animation application where anyone can enter and easily create new pixelated masterpieces. Each user can save their own drawings and animations, as well as post them to the platform, where other users can see them and download them at the poster's discression. Users will be able to use various tools to assist their drawings, like a color history tracker, color palette generator, animation frames viewer, and more. It'll be accessible to use with mouse, keyboard, or both. Users will also be able to have collaborative canvases which will update in real time to all users connected, with a small chat box.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  }
+}
