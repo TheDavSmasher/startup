@@ -53,3 +53,4 @@ This deliverable uses basic HTML and minor CSS elements for the basic structure 
 - **Pixel Canvas** - Canvas is fully interactible with color selection, placement, clearing, undo, and redo tools.
 - **Login** - Mocked Login functionality with local storage.
 - **Vite** - Packaged and deployed with Vite.
+- **Routing** - Used Routing to display the multiple pages of the application.
