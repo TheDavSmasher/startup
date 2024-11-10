@@ -1,0 +1,34 @@
+.main-canvas {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-canvas * {
+    box-sizing: border-box;
+}
+
+.pixel-canvas {
+    display: flex;
+    justify-content: center;
+}
+
+.pixel-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.pixel {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 4px;
+    height: 30px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 30px;
+}

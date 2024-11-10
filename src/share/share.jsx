@@ -13,7 +13,7 @@ export function Share() {
                             <img src="box.gif" className="post-image" />
                         </div>
                         <div className="credits">
-                            <span style="font-style: italic;">Breaker Box</span>
+                            <span className="image-title">Breaker Box</span>
                             <span>By: MaildropFolder</span>
                         </div>
                     </div>
@@ -22,7 +22,7 @@ export function Share() {
                             <img src="crow00.png" className="post-image" />
                         </div>
                         <div className="credits">
-                            <span style="font-style: italic;">Crow Sprite</span>
+                            <span className="image-title">Crow Sprite</span>
                             <span>By: Maddie</span>
                         </div>
                     </div>
