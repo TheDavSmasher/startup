@@ -46,3 +46,10 @@ This deliverable uses basic HTML and minor CSS elements for the basic structure 
 - **Navigation** - Header includes a navigation element with proper CSS
 - **Flex Design** - All elemenents respond to window resizing accordingly.
 - **Elements and Text** - All elements and text properly separated and stylized with CSS.
+
+## React Deliverable
+
+- **General** - Changed all the application's structure to use React JSX for most functionality.
+- **Pixel Canvas** - Canvas is fully interactible with color selection, placement, clearing, undo, and redo tools.
+- **Login** - Mocked Login functionality with local storage.
+- **Vite** - Packaged and deployed with Vite.
