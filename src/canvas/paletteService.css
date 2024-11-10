@@ -1,0 +1,10 @@
+.palette-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.palette-color {
+    flex: 1;
+    height: 40px;
+}
