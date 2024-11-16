@@ -5,11 +5,11 @@ import './paletteService.css'
 export function PaletteService({ currentColor, changeActiveColor }) {
     const [colorArray, setColorArray] = React.useState(Array(5).fill([0,0,0]));
 
-    async function generateNewPalette(reference) {
+    async function generateNewPalette() {
         const url = "http://colormind.io/api/";
         const data = {
             model : "default",
-            input : [reference, "N", "N", "N", "N"]
+            input : [currentColor.slice(0, -1), "N", "N", "N", "N"]
         }
         try {
             const response = await fetch(url, {body : JSON.stringify(data), method : "post"});
@@ -41,7 +41,7 @@ export function PaletteService({ currentColor, changeActiveColor }) {
                 <ColorSquare value={colorArray[3]} updateColor={changeActiveColor} />
                 <ColorSquare value={colorArray[4]} updateColor={changeActiveColor} />
             </div>
-            <button className="btn btn-secondary" onClick={() => generateNewPalette(currentColor.slice(0, -1))}>Generate New</button>
+            <button className="btn btn-secondary" onClick={generateNewPalette}>Generate New</button>
         </div>
     );
 }
