@@ -27,15 +27,15 @@ apiRouter.post('/auth/create', async (req, res) => {
   });
 
 apiRouter.post('/auth/login', async (req, res) => {
-const user = users[req.body.email];
-if (user) {
-    if (req.body.password === user.password) {
-    user.token = uuid.v4();
-    res.send({ token: user.token });
-    return;
+    const user = users[req.body.email];
+    if (user) {
+        if (req.body.password === user.password) {
+        user.token = uuid.v4();
+        res.send({ token: user.token });
+        return;
+        }
     }
-}
-res.status(401).send({ msg: 'Unauthorized' });
+    res.status(401).send({ msg: 'Unauthorized' });
 });
 
 apiRouter.delete('/auth/logout', (req, res) => {
@@ -44,4 +44,12 @@ apiRouter.delete('/auth/logout', (req, res) => {
         delete user.token;
     }
     res.status(204).end();
+});
+
+app.use((_req, res) => {
+    res.sendFile('index.html', { root: 'public' });
+});
+
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
 });

@@ -12,7 +12,7 @@ export function Canvas() {
     return (
         <main>
             <div className="reference-area">
-                <PaletteService changeColor={(color) => setCurrentColor(color)} />
+                <PaletteService currentColor={currentColor} changeActiveColor={(color) => setCurrentColor(color)} />
                 <div className="empty"></div>
                 <Chatbox />
             </div>
