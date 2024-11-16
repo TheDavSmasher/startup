@@ -8,3 +8,32 @@
     flex: 1;
     height: 40px;
 }
+
+.palette-mode {
+    width: 100%;
+    min-width: 270px;
+    display: flex;
+    flex-direction: row;
+}
+
+.generate-btn {
+    width: 80px;
+    padding-left: 6px !important;
+    text-align: center !important;
+    border-radius: 5px 0 0 5px !important;
+}
+
+.dropdown {
+    flex: 1;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    text-align: left !important;
+    padding-left: 6px !important;
+    border-radius: 0 5px 5px 0 !important;
+}
+
+.dropdown-toggle::after {
+    align-self: center;
+}

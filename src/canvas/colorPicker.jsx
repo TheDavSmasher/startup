@@ -48,7 +48,7 @@ export function ColorPicker({ currentColor, changeActiveColor }) {
                         </div>
                         <div className="rgb-value">
                             <label htmlFor="blue">B</label>
-                            <input type="range" name="green" id="green" min="0" max="255" step="1" className="form-range" value={blue} onChange={(e) => setBlue(Number(e.target.value))} />
+                            <input type="range" name="green" id="blue" min="0" max="255" step="1" className="form-range" value={blue} onChange={(e) => setBlue(Number(e.target.value))} />
                         </div> 
                     </div>
                     <div className="general-selection">

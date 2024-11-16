@@ -60,4 +60,4 @@ This deliverable uses basic HTML and minor CSS elements for the basic structure 
 - **General** - Added index.js for various application endpoints utilizing Node and Express.
 - **Express** - Frontend managed with static Express middleware.
 - **Login** - Utilizes Express and endpoints to better store the users that have registered or logged in.
-- **Color Palette Service** - Utilized the <http://colormind.io/api-access/> service to generate a color palette based on the current color, which when clicked will set the active color to the one clicked.
+- **Color Palette Service** - Utilized the <https://www.thecolorapi.com/docs> service to generate a color palette based on the current color, which when clicked will set the active color to the one clicked.
