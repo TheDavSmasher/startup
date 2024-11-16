@@ -33,7 +33,3 @@
     padding-left: 6px !important;
     border-radius: 0 5px 5px 0 !important;
 }
-
-.dropdown-toggle::after {
-    align-self: center;
-}
