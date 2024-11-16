@@ -54,3 +54,10 @@ This deliverable uses basic HTML and minor CSS elements for the basic structure 
 - **Login** - Mocked Login functionality with local storage.
 - **Vite** - Packaged and deployed with Vite.
 - **Routing** - Used Routing to display the multiple pages of the application.
+
+## Service Deliverable
+
+- **General** - Added index.js for various application endpoints utilizing Node and Express.
+- **Express** - Frontend managed with static Express middleware.
+- **Login** - Utilizes Express and endpoints to better store the users that have registered or logged in.
+- **Color Palette Service** - Utilized the <http://colormind.io/api-access/> service to generate a color palette based on the current color, which when clicked will set the active color to the one clicked.
