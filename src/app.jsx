@@ -53,7 +53,7 @@ export function App() {
                 <footer className="footer text-white-50">
                     <div className="footer-cont">
                         <span className="text-reset">David Higueros</span>
-                        <NavLink className="text-reset" href="https://github.com/TheDavSmasher/startup">GitHub</NavLink>
+                        <a className="text-reset" href="https://github.com/TheDavSmasher/startup">GitHub</a>
                     </div>
                 </footer>
             </div>
