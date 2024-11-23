@@ -61,3 +61,11 @@ This deliverable uses basic HTML and minor CSS elements for the basic structure 
 - **Express** - Frontend managed with static Express middleware.
 - **Login** - Utilizes Express and endpoints to better store the users that have registered or logged in.
 - **Color Palette Service** - Utilized the <https://www.thecolorapi.com/docs> service to generate a color palette based on the current color, which when clicked will set the active color to the one clicked.
+
+## Login Deliverable
+
+- **Database integration** - User data is stored in and retrived from a persistent database with MongoDB Atlas.
+- **Data Hashing** - User passwords are stored encrypted for security.
+- **Persistent Registration** - Users who registrate can now use the login side of the page to return.
+- **Logout** - Users can log out normally and return at any time.
+- **Authentication** - Non-registered users are blocked from entering the other pages of the application.
