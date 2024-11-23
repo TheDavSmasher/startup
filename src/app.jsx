@@ -36,7 +36,7 @@ export function App() {
                     </nav>
                     <div className="empty-separator" />
                     <div className="user-display">
-                        {userName}
+                        {localStorage.getItem('userName')}
                     </div>
                 </header>
 
