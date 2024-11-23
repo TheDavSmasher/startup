@@ -8,7 +8,6 @@ const client = new MongoClient(url);
 const db = client.db('startup');
 const userCollection = db.collection('user');
 
-// This will asynchronously test the connection and exit the process if it fails
 (async function testConnection() {
   await client.connect();
   await db.command({ ping: 1 });
