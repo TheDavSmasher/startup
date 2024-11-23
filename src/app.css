@@ -38,6 +38,14 @@ menu > li {
     padding: 0 0.5em;
 }
 
+.empty-separator {
+    flex: 1;
+}
+
+.user-display {
+    float: right;
+}
+
 main {
     flex: 1 calc(100vh - 90px);
     justify-content: space-around;

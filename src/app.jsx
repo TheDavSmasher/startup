@@ -34,6 +34,10 @@ export function App() {
                             )}
                         </menu>
                     </nav>
+                    <div className="empty-separator" />
+                    <div className="user-display">
+                        {userName}
+                    </div>
                 </header>
 
                 <Routes>
