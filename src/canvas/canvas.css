@@ -21,20 +21,6 @@ main {
     flex: 1;
 }
 
-.chatbox {
-    margin: 5px;
-    margin-bottom: 0;
-    background-color: aliceblue;
-    border-radius: 5px 5px 0 0;
-}
-
-.chat-title {
-    margin: 0;
-    padding: 5px;
-    background-color: rgb(197, 226, 233);
-    border-radius: 5px;
-}
-
 .send-message-box {
     border-radius: 0 !important;
 }
