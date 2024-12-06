@@ -6,7 +6,7 @@ import { Chatbox } from "./chatbox";
 
 import './canvas.css';
 
-export function Canvas() {
+export function Canvas(props) {
     const [currentColor, setCurrentColor] = React.useState([0, 0, 0, 0])
 
     return (
@@ -14,7 +14,7 @@ export function Canvas() {
             <div className="reference-area">
                 <PaletteService currentColor={currentColor} changeActiveColor={(color) => setCurrentColor(color)} />
                 <div className="empty"></div>
-                <Chatbox />
+                <Chatbox userName={props.userName} />
             </div>
             <PixelCanvas currentColor={() => currentColor} width={20} height={20} />
             <div className="color-area">

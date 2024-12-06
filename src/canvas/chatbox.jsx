@@ -1,6 +1,8 @@
 import React from "react";
+import { delay } from './delay';
 
-export function Chatbox() {
+export function Chatbox(props) {
+
     return (
         <div className="chatbox">
             <div className="chat-title">

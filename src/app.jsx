@@ -50,7 +50,7 @@ export function App() {
                         }}
                     />} exact />
                     <Route path="/share" element={<Share />} />
-                    <Route path="/canvas" element={<Canvas />} />
+                    <Route path="/canvas" element={<Canvas userName={userName} />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
 
