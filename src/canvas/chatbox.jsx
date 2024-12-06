@@ -1,7 +1,30 @@
 import React from "react";
+import { History } from './messageHandler'
 import { delay } from './delay';
 
 export function Chatbox(props) {
+    const userName = props.userName;
+
+    const [messageList, setMessageList] = React.useState([]);
+
+    React.useEffect(() => {
+        History.addHandler(addMessage);
+
+        return () => {
+            History.removeHandler(addMessage);
+        };
+    });
+
+    function addMessage(message) {
+        setMessageList([...messageList, message]);
+        delay(2000, () => {
+            const sliced = [];
+            for (let index = 1; index < messageList.length; index++) {
+                sliced.push(messageList[index]);
+            }            
+            setMessageList(sliced);
+        });
+    }
 
     return (
         <div className="chatbox">
