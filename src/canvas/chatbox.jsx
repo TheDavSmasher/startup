@@ -58,12 +58,6 @@ export function Chatbox(props) {
     return (
         <div className="chatbox">
             <div className="toast-container position-static">{createMessageArray()}</div>
-            <ul>
-                <li className="message"><span className="user">Addie: </span> Looks great!</li>
-                <li className="message"><span className="user">Sam: </span> I'll be working on frame 26.</li>
-                <li className="message"><span className="user">You: </span> I'll be back</li>
-                <li className="message"><span className="user">Addie: </span> see ya</li>
-            </ul>
             <div className="input-group send-message-form">
                 <input type="text" id="newMessage" className="form-control send-message-box" value={messageText} onChange={(e) => setMessageText(e.target.value)} />
                 <div className="input-group-append">
