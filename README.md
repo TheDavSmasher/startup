@@ -69,3 +69,8 @@ This deliverable uses basic HTML and minor CSS elements for the basic structure 
 - **Persistent Registration** - Users who registrate can now use the login side of the page to return.
 - **Logout** - Users can log out normally and return at any time.
 - **Authentication** - Non-registered users are blocked from entering the other pages of the application.
+
+## WebSocket Deliverable
+
+- **WebSocket Integration** - Server will listen to WebSocket requests and proxy messages. Users can connect through the client.
+- **Chat Messages** - Users can send text messages through the client. Other connected clients will receive the messages sent.
