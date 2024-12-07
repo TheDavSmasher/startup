@@ -57,7 +57,7 @@ export function Chatbox(props) {
             <div className="input-group send-message-form">
                 <input type="text" id="newMessage" className="form-control send-message-box" value={messageText} onChange={(e) => setMessageText(e.target.value)} />
                 <div className="input-group-append">
-                    <button type="submit" className="btn btn-success" onClick={sendMessage} disabled={!messageText} >Send</button>
+                    <button type="submit" className="btn btn-success" onClick={sendMessage} onKeyDown={(e) => {if (e.key === 'Enter') sendMessage();} } disabled={!messageText} >Send</button>
                 </div>
             </div>
         </div>
