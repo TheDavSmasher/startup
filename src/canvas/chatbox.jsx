@@ -28,31 +28,27 @@ export function Chatbox(props) {
     }
 
     function sendMessage() {
-        History.broadcastMessage(userName, messageText, Date.now());
+        const text = messageText;
         setMessageText('');
+        History.broadcastMessage(userName, text, Date.now());
     }
 
     function getTime(date) {
-        const hours = date.getHours();
-        const minutes = date.getMinutes();
-        const seconds = date.getSeconds();
-
-        return `${hours}:${minutes}:${seconds}`;
+        const value = new Date(date);
+        return value.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric' });
     }
 
     function createMessageArray() {
-        return messageList.map((message) => {
-            return (
-                <div className="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-config='{"hide":9000}' >
-                    <div className="toast-header">
-                        <img src="..." class="rounded me-2" alt="..." />
-                        <strong class="me-auto">{message.name}</strong>
-                        <small class="text-body-secondary">{getTime(message.time)}</small>
-                    </div>
-                    <div className="toast-body">{message.text}</div>
+        const messageArray = messageList.map((message) =>
+            (<div key={message.time} className="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay='{"hide":9000}' >
+                <div className="toast-header">
+                    <strong className="me-auto">{message.name}</strong>
+                    <small className="text-body-secondary">{getTime(message.time)}</small>
                 </div>
-            );
-        })
+                <div className="toast-body">{message.text}</div>
+            </div>)
+        );
+        return messageArray;
     }
 
     return (
